@@ -1,2 +1,2 @@
 # Maosef-website
-Personal website project
+Personal website, blog, portfolio. Work in progress. Built using Jekyll.
