@@ -20,7 +20,7 @@ Made with the Smith Investment Fund. Performs data ingestion, fundamental factor
 
 # FINRA Advisor network
 Visualize financial advisors and their connections via concurrent employment. Made during Bitcamp.
-![FINRA network](/images/finra_network.png)
+![FINRA network](/images/finra_network.PNG)
 [Link to the code][finra-network]
 
 # Bookshelf
@@ -29,7 +29,7 @@ Sees bookshelf, recommends book titles. Made during PennApps.
 
 # Topic visualizer
 Ingest a bunch of text, run topic modelling (LDA) on it, visualize the results. Built with Gensim and Plotly.
-![Topic model](/images/topic_model.png)
+![Topic model](/images/topic_model.PNG)
 
 # Spatio-temporal action detection
 Classify actions in a video. Localize it over space and time. Built with Tensorflow and OpenCV.
