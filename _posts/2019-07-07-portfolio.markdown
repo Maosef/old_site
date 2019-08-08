@@ -5,8 +5,6 @@ date:   2019-07-07 22:17:56 -0400
 categories: computer science
 ---
 
-I want a spot for a portfolio, but I also want a blog. Since I only get one free site on Github, I may as well combine them.
-
 ## Things I've done
 
 # Text classifier

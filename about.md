@@ -13,6 +13,7 @@ I'm a sophomore studying Computer Science and Math. Some things I like (hopefull
 * Financial analysis
 * Chess
 
+I want a spot for a portfolio, but I also want a blog. Since I only get one free site on Github, I may as well combine them.
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
