@@ -14,7 +14,7 @@ Classify sentences with malware attributes. Built with Pandas and scikit-learn.
 
 # Co-occurence network
 Ingest a bunch of documents, extract named-entities, visualize their co-occurence network. Nodes are words, edges are weighted by frequency. Built with spaCy, networkx, and Plotly.
-![Conet](/images/conet.png)
+![Conet](/images/conet2.png)
 
 # Trading Algorithm Pipeline
 Made with the Smith Investment Fund. Performs data ingestion, fundamental factor calculations, and backtesting. 
