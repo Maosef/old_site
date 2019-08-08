@@ -16,8 +16,8 @@
 title: Andrew Mao
 email: amao1@umd.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a student at UMD, working @Northrop Grumman. 
-  I enjoy reading about math, algorithms, and the next thing that computers can do better than humans.
+  I'm a student at UMD, studying CS+Math. 
+  I enjoy reading about finance, algorithms, and the next thing that computers can do better than humans.
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
