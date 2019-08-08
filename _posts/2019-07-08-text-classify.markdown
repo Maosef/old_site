@@ -5,13 +5,6 @@ date:   2019-07-08 22:17:56 -0400
 categories: nlp
 ---
 
-<!-- At my work (Northrop Grumman), a large portion of our project involves extracting information from unstructured text. Cybersecurity reports, to be more specific. Why? Well, imagine you're an analyst whose job is to handle security events for an IT system. Most of them will probably be one and done - a few of them need more digging. That's when you need to read intelligence reports, from the thousands that go out every few months. It's a classic NLP problem, applied to a different domain. 
-
-There's a lot of info you could extract with some basic rule-matching - IoCs, threat actors, malware aliases, etc. Okay, but where's the NLP?  
-
-Another reason NLP is cool: Text is information-dense. Much more than, say, the pixels of an image. -->
-
-
 This summer I learned a little about Natural Language Processing (NLP). I thought it was pretty cool (and still do), so I want to try and summarize what I've learned about this field, in addition to diving deeper into some specifics.
 
 Some quick reasons why I think NLP is cool:
@@ -57,9 +50,28 @@ Each of these tasks is a research subject of its own. I'll give some quips about
 
 So understanding all of that requires some reading of graphical models and formal language theory. And we're far from extracting more complex knowledge. Bless the NLP gods who made these tools open-source for us plebians.
 
+# Relationship Extraction
 So on to relationship extraction. There's still a lot to be done in this field. I've seen two main approaches: 
-1. Supervised learning of sentences to an existing set of relationship labels (an **ontology**).
-2. Unsupervised methods. 
+1. Supervised learning of sentences to a predefined set of relationship labels.
+2. Unsupervised methods. The best known of these is **Open Information Extraction**. Extracts relation triplets (subj-verb-obj) from the structure of the dependency parse. Useful in that you don't need to specify what you're looking for, but messier. 
+
+Note that with extracting relationship triples, we'll end up with a lot more than just named entities. A big problem here is cleaning and "canonicalizing" the elements.
+
+# Concepts and Beyond
+
+With entities and relationships, the ideal goal is to build a **knowledge base** of sorts, with which you could do things like run logical inference to deduce other knowledge, or even answer questions. Getting there requires some more steps. A big one is **entity linking** - resolving different mentions of an entity to a single database entry. This is closely related to **coreference resolution**, or finding all mentions that refer to the same entity. Coref is associated more with finding internal links (e.g pronouns), entity linking is external. You should also do some kind of linking with the relationships. 
+
+You'll probably want to organize your entities into some kind of semantic hierarchy - for example, we'd might want to know that oak is a type of tree. There are various terms for this - **semantic network**, **lexical database** or **ontology**. This is really hard, and I haven't seen anything that can totally automate this yet. Current networks are hand-built, like WordNet and ConceptNet, but they offer far from full coverage.
+
+![ConceptNet](/images/conceptnet.png)
+
+There are many flavors of knowledge base - DBpedia, Freebase, Cyc, NELL, and so on. I want to explain them more in-depth later. As complex as they are, I was surprised to learn that knowledge bases are essentially an **expert system**! Indeed, knowledge bases were a focal point of AI research in the 60s-80s. The point of languages like LISP and Prolog was to have the power to apply logical rules to these databases (forward and backward chaining). I had always just assumed expert systems were a bunch of trivial "if-then" statements. That's still true in a sense, but there's really so much more to it.
+
+As we know, expert systems fell out of favor, because they weren't robust. And the poster child for that failure has got to be [Cyc][Cyc]. Cyc was a project to develop a system with "commonsense knowledge". It was a big knowledge base that followed a big ontology, and was paired with a big inference engine. So what why wasn't it robust? I don't really know, but I hope to read more about it. Ian Goodfellow, in the introduction of his excellent book "Deep Learning", shows a [fun example][DL intro] (page 2). Another (opinionated) [article][Cyc rant]. Essentially it seems to boil down to: humans can't account for every edge case. So instead, should we... automate it?
+
+[Cyc]: https://en.wikipedia.org/wiki/Cyc
+[DL intro]: https://www.deeplearningbook.org/contents/intro.html
+[Cyc rant]: https://news.ycombinator.com/item?id=4216706
 
 <!-- 
 
