@@ -46,7 +46,22 @@ This is probably one of the more well known tasks, since it has strong support f
 
 ![NLP pipeline](/images/NLP_pipeline.png)
 
-<!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Each of these tasks is a research subject of its own. I'll give some quips about each of them.
+
+* **Tokenization**: splitting text into words, punctuation, etc. We can naively split by spaces/delete punctuation, but that misses tons of edge cases - contractions, hyphenated words, abbreviations (e.g N.Y.), money, etc. It's basically a bunch of rules.
+* **POS Tagging**: nontrivial because words may have different parts of speech in different context (e.g. "can"). It's not too bad for English. This was one of the first problems that graphical models were shown to excel at (Hidden Markov Models!). I hope to write more about them later.
+* **Dependency parsing**: relationships between tokens, according to a dependency grammar. It's stuff you learn in a computational linguistics class, but basically it's like "syntax." simplified examples: subject, object, root verb. Sentences can also have ambiguous parses, so we use statistical models again. [I still don't fully understand it][shift reduce].
+* **NER**: Lots of approaches. Conditional Random Fields (CRFs), another graphical model, do pretty well. RNNs edge them out by a bit. Currently NER models have basically human-level performance on general types of entities, but  they still don't generalize well to domain-specific text. 
+
+[shift reduce]: https://en.wikipedia.org/wiki/Shift-reduce_parser
+
+So understanding all of that requires some reading of graphical models and formal language theory. And we're far from extracting more complex knowledge. Bless the NLP gods who made these tools open-source for us plebians.
+
+So on to relationship extraction. There's still a lot to be done in this field. I've seen two main approaches: 
+1. Supervised learning of sentences to an existing set of relationship labels (an **ontology**).
+2. Unsupervised methods. 
+
+<!-- 
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
