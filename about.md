@@ -7,10 +7,10 @@ permalink: /about/
 I'm a sophomore studying Computer Science and Math. Some things I like (hopefully I'll write a post about one soon):
 
 * Natural Language Processing
-* Reinforcement Learning
+* Networks
 * Data visualization
-* Doing hackathons
-* Financial analysis
+* Machine Learning
+* Finance
 * Chess
 
 I want a spot for a portfolio, but I also want a blog. Since I only get one free site on Github, I may as well combine them.

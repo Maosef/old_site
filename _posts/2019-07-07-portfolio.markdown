@@ -10,6 +10,7 @@ categories: computer science
 
 # Text classifier
 Classify sentences with malware attributes. Built with Pandas and scikit-learn.
+![performance](/images/text_classify_perf.png)
 
 **More details**: I'm writing an [article][text classify] on this! 
 
@@ -18,12 +19,15 @@ Classify sentences with malware attributes. Built with Pandas and scikit-learn.
 # Co-occurence network
 Ingest a bunch of documents, extract named-entities, visualize their co-occurences. Nodes are words, edges are weighted by frequency. Built with spaCy, networkx, and Plotly.
 ![Conet](/images/conet2.png)
+
 **More details**: This wasn't new or difficult to do, but it looked cool. I was trying to build a pipeline for automated knowledge base construction... still getting there. One extension would be to run community detection algorithms on it.
+
 
 # Trading Algorithm Pipeline
 Made with the Smith Investment Fund. Performs data ingestion, fundamental factor calculations, and backtesting. 
 
 ![trading performance](/images/trading_perf.png)
+
 
 # FINRA Advisor network
 Visualize financial advisors and their connections via concurrent employment. Made during Bitcamp 2019.
