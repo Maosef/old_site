@@ -89,13 +89,13 @@ language modelling
 * BERT
 * XLNet
 
-# Other 
+## Other 
 
 CV+NLP
 * image captioning
 * attention
 
-## Reinforcement Learning
+# Reinforcement Learning
 Markov decision processes (MDPs)
 * dynamic programming solution, value iteration
 * generalizations - POMDPs, RL
@@ -107,7 +107,7 @@ model-free learning
 * policy gradients
 * hybrid models
 
-## Automated ML
+# Automated ML
 
 * hyperparameter optimization
 * neural architecture search
@@ -115,7 +115,7 @@ model-free learning
 * meta-learning
 * one-shot learning
 
-## Other
+# Other
 
 spiking neural network, neuromorphic chips
 neural Turing machine, differentiable neural computer
