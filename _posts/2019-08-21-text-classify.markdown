@@ -18,7 +18,7 @@ There's a lot of papers on cyber data. We want to read through them faster, so w
 
 [SecureNLP]: https://www.aclweb.org/anthology/S18-1113
 <!-- ![sample annotation](/images/securenlp_demo.png) -->
-<img src="/images/securenlp_demo.png" alt="drawing" width="500"/>
+<img src="/images/securenlp_demo.PNG" alt="drawing" width="500"/>
 
 
 # The goal
@@ -34,8 +34,8 @@ The most annoying part is the data preprocessing, which I'll skip. Let's examine
 
 <!-- ![classes](/images/securenlp_classes.png) -->
 <!-- ![class_freqs](/images/securenlp_class_distro.png) -->
-<img src="/images/securenlp_classes.png" alt="drawing" width="500"/>
-<img src="/images/securenlp_class_distro.png" alt="drawing" width="500"/>
+<img src="/images/securenlp_classes.PNG" alt="drawing" width="500"/>
+<img src="/images/securenlp_class_distro.PNG" alt="drawing" width="500"/>
 
 
 Well there's our first problem. Not only is the dataset small, but its highly skewed. Either way, let's proceed with a simple baseline - bag-of-words with a linear support vector machine, trained using stochastic gradient descent. Let's evaluate it using a support-weighted F1 score, which will give the higher frequency classes more representation.
@@ -58,7 +58,7 @@ run_pipeline_tune(X_train, y_train, X_test, y_test, model)
 
 Our result? 0.594. Not so bad, but there's evidently room for improvement. We can visualize the learning curve of the model to get a sense of its behavior.
 
-<img src="/images/text_classify_perf.png" alt="drawing" width="500"/>
+<img src="/images/text_classify_perf.PNG" alt="drawing" width="500"/>
 
 The gap between the training and validation curves is a classic sign of overfitting. So how can we improve it?
 

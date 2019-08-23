@@ -10,7 +10,7 @@ categories: computer science
 
 # Text classifier
 Classify sentences with malware attributes. Built with Pandas and scikit-learn.
-![performance](/images/text_classify_perf.png)
+![performance](/images/text_classify_perf.PNG)
 
 **More details**: I'm writing an [article][text classify] on this! 
 
@@ -26,7 +26,7 @@ Ingest a bunch of documents, extract named-entities, visualize their co-occurenc
 # Trading Algorithm Pipeline
 Made with the Smith Investment Fund. Performs data ingestion, fundamental factor calculations, and backtesting. 
 
-![trading performance](/images/trading_perf.png)
+![trading performance](/images/trading_perf.PNG)
 
 
 # FINRA Advisor network
